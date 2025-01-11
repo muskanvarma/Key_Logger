@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyLogger</title>
+    <style>
+        #container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 50px;
+        }
+        
+        .key {
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+        
+        #log,
+        #state {
+            width: 500px;
+            height: 50px;
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+            background-color: #ffa500;
+            border-radius: 10px;
+        }
+        
+        #btncontainer {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1 class="key">
+            KeyLogger
+        </h1>
+        <p> Don't forget to test keyLogger </p>
+        <div class="button">
+            <button id="startbtn"> Start Logging KeyPresses</button>
+            <button id="stopbtn">Stop logging KeyPresses</button>
+        </div>
+        <div id="btncontainer">
+            <div id="log"></div>
+            <div id="state"></div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
